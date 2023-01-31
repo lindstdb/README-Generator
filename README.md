@@ -17,7 +17,7 @@ Generates a professional readme.md using node prompts.
 Install [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) and open index.js in an intergrated terminal in VS code. Run the program with 'node index.js' on the command line.
 
 ## Usage
-
+README-Walkthrough.webm
 
 ## Questions
 If you have any questions, you can reach me at notme@yahoo.com.
