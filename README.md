@@ -1,10 +1,7 @@
-# sdgf
+# README Generator
 
 ## Description
-dzfg
-
-## License
-GPL [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)] https://www.gnu.org/licenses/gpl-3.0
+Generates a professional readme.md using node prompts.
 
 
 
@@ -17,17 +14,11 @@ GPL [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)] ht
 - [Questions](#questions)
 
 ## Installation
-zfdg
+Install [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) and open index.js in an intergrated terminal in VS code. Run the program with 'node index.js' on the command line.
 
 ## Usage
-zfgs
 
-## Contributing
-sfzg
-
-## Tests
-zfdg
 
 ## Questions
-If you have any questions, you can reach me at notme@gmail.com.
+If you have any questions, you can reach me at notme@yahoo.com.
 You can also find me on GitHub at https://github.com/lindstdb.

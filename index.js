@@ -84,7 +84,7 @@ rl.question("What is the title of your project? ", (answer) => {
                   readme += `## Questions\nIf you have any questions, you can reach me at ${data.email}.\nYou can also find me on GitHub at https://github.com/${data.github}.`;
 
                   // Write README to file
-                  fs.writeFileSync('README.md', readme);
+                  fs.writeFileSync('generatedMarkdown.md', readme);
 
                   console.log("README generated!");
                   rl.close();
