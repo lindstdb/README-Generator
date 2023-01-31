@@ -3,32 +3,23 @@ const fs = require('fs');
 
 const licenses = {
   MIT: {
-    badge: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+    badge: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
     link: "https://opensource.org/licenses/MIT",
     notice: "This project is licensed under the MIT License."
   },
   GPL: {
-    badge: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+    badge: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
     link: "https://www.gnu.org/licenses/gpl-3.0",
     notice: "This project is licensed under the GNU General Public License v3.0."
   },
   Apache: {
-    badge: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+    badge: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]",
     link: "https://opensource.org/licenses/Apache-2.0",
     notice: "This project is licensed under the Apache License 2.0."
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
-
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-
-
-
+// Generate license info based on snswer
 function printLicenseInfo(data) {
   let license = licenses[data.license];
   if (!license) {
@@ -84,10 +75,10 @@ rl.question("What is the title of your project? ", (answer) => {
                   // Generate README
                   let readme = `# ${data.title}\n\n`;
                   readme += `## Description\n${data.description}\n\n`;
+                  readme += `${printLicenseInfo(data)}\n\n`;
                   readme += `## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [License](#license)\n- [Contributing](#contributing)\n- [Tests](#tests)\n- [Questions](#questions)\n\n`;
                   readme += `## Installation\n${data.installation}\n\n`;
-                  readme += `## Usage\n${data.usage}\n\n`;
-                  readme += `${printLicenseInfo(data)}\n\n`;
+                  readme += `## Usage\n${data.usage}\n\n`;                  
                   readme += `## Contributing\n${data.contributing}\n\n`;
                   readme += `## Tests\n${data.tests}\n\n`;
                   readme += `## Questions\nIf you have any questions, you can reach me at ${data.email}.\nYou can also find me on GitHub at https://github.com/${data.github}.`;
