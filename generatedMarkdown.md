@@ -1,10 +1,10 @@
-# README Generator
+# sgs
 
 ## Description
-Generates a readme.md file for your project
+sghbgs
 
 ## License
-Apache [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)] https://opensource.org/licenses/Apache-2.0
+MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] https://opensource.org/licenses/MIT
 
 
 
@@ -17,17 +17,17 @@ Apache [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)] 
 - [Questions](#questions)
 
 ## Installation
-install inquire and run node index.js
+sgbsaz
 
 ## Usage
-use carefully
+gfbnzb
 
 ## Contributing
-contribute everything you have
+dgzbz
 
 ## Tests
-test it, send it
+zgbfz
 
 ## Questions
-If you have any questions, you can reach me at notmyemail@yahoo.com.
-You can also find me on GitHub at https://github.com/lindstdb.
+If you have any questions, you can reach me at sfghbsz.
+You can also find me on GitHub at https://github.com/fdghns.
