@@ -1,7 +1,7 @@
-# Rogan
+# README generator
 
 ## Description
-Seth
+Generates a professional reamde.md file based on prompts.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,20 +12,22 @@ Seth
 - [Questions](#questions)
 
 ## Installation
-Joe
+grip it, and rip it.
 
 ## Usage
-Paul
+sparingly
 
 ## License
-This project is covered under the MIT license.
+GPL [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) https://www.gnu.org/licenses/gpl-3.0
+
+
 
 ## Contributing
-Gary
+do what you can not what you want
 
 ## Tests
-Billy
+send it
 
 ## Questions
-If you have any questions, you can reach me at notmyemail@email.com.
+If you have any questions, you can reach me at notme@yahoo.com.
 You can also find me on GitHub at https://github.com/lindstdb.

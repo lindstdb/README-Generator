@@ -1,6 +1,43 @@
 const readline = require('readline');
 const fs = require('fs');
 
+const licenses = {
+  MIT: {
+    badge: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+    link: "https://opensource.org/licenses/MIT",
+    notice: "This project is licensed under the MIT License."
+  },
+  GPL: {
+    badge: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+    link: "https://www.gnu.org/licenses/gpl-3.0",
+    notice: "This project is licensed under the GNU General Public License v3.0."
+  },
+  Apache: {
+    badge: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+    link: "https://opensource.org/licenses/Apache-2.0",
+    notice: "This project is licensed under the Apache License 2.0."
+  }
+};
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+
+
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+
+
+
+function printLicenseInfo(data) {
+  let license = licenses[data.license];
+  if (!license) {
+    return "";
+  }
+  return `## License\n${data.license} ${license.badge} ${license.link}\n\n`;
+}
+
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -33,7 +70,7 @@ rl.question("What is the title of your project? ", (answer) => {
             data.tests = answer;
 
             // Prompt for license
-            rl.question("Enter a license for your project (e.g. MIT): ", (answer) => {
+            rl.question("Enter a license for your project (MIT, GPL, Apache): ", (answer) => {
               data.license = answer;
 
               // Prompt for GitHub username
@@ -50,7 +87,7 @@ rl.question("What is the title of your project? ", (answer) => {
                   readme += `## Table of Contents\n- [Installation](#installation)\n- [Usage](#usage)\n- [License](#license)\n- [Contributing](#contributing)\n- [Tests](#tests)\n- [Questions](#questions)\n\n`;
                   readme += `## Installation\n${data.installation}\n\n`;
                   readme += `## Usage\n${data.usage}\n\n`;
-                  readme += `## License\nThis project is covered under the ${data.license} license.\n\n`;
+                  readme += `${printLicenseInfo(data)}\n\n`;
                   readme += `## Contributing\n${data.contributing}\n\n`;
                   readme += `## Tests\n${data.tests}\n\n`;
                   readme += `## Questions\nIf you have any questions, you can reach me at ${data.email}.\nYou can also find me on GitHub at https://github.com/${data.github}.`;
@@ -69,3 +106,4 @@ rl.question("What is the title of your project? ", (answer) => {
     });
   });
 });
+
