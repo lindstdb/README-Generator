@@ -1,7 +1,7 @@
-# README Generator
+# README-Generator
 
 ## Description
-Generates a professional readme.md file for your project.
+Generates README files for projects
 
 ## License
 MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] https://opensource.org/licenses/MIT
@@ -17,17 +17,17 @@ MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] https
 - [Questions](#questions)
 
 ## Installation
-install inquirer@8.2.4 and run 'node index.js' from the command line.
+NPM i - node index.js
 
 ## Usage
-Use the command line and node prompts.
+For use among humans
 
 ## Contributing
-Contribute by yelling very, very loudly.
+Contribute, please
 
 ## Tests
-Testing, Testing...
+testing 1.. testing
 
 ## Questions
-If you have any questions, you can reach me at notmyemail@gmail.com.
+If you have any questions, you can reach me at lindstdb@gmail.com.
 You can also find me on GitHub at https://github.com/lindstdb.
